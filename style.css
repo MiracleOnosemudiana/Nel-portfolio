@@ -94,6 +94,7 @@ li {
     color: rgb(255, 174, 25);
     border: 1px solid rgb(255, 174, 25);
     transition: all .2s ease-in;
+    font-size: 18px;
 }
 
 .call:hover {
@@ -134,15 +135,18 @@ li {
     background-repeat: no-repeat;
     background-size: initial;
     width: 100%;
-    height: 625px;
+    height: 100%;
     background-position: center;
     z-index: -100;
-    padding: 9rem 0rem;
+    padding: 9rem 0rem 0rem;
+    margin-bottom: 12rem;
 }
 
-.heroContent>.container-lg {
+.heroContent>.container-md {
     justify-content: space-between;
+    align-items: center;
     display: flex;
+    gap: 1rem;
 }
 
 .profile>p {
@@ -176,18 +180,15 @@ li {
 }
 
 
-.top-space {
-    max-width: 430px;
-    min-height: calc(24vh + 230px);
-    border-radius: 50%;
-}
 
 @media (max-width:950px) {
-    .heroContent>.container-lg {
-        display: block;
-        padding: 0 2rem;
+    .heroContent>.container-md {
+        /* display: block;
+        padding: 0 2rem;*/
         text-align: center;
         justify-content: center;
+        flex-wrap: wrap;
+        gap: 4rem;
     }
 
     .profile>p {
@@ -205,6 +206,27 @@ li {
 
 }
 
+@media (min-width:950px) {
+    .img1 {
+        width: 500px;
+        height: 500px;
+    }
+
+}
+
+@media (min-width:800px) {
+    .img1 {
+        width: 500px;
+        height: 500px;
+    }
+
+}
+
+.img1 {
+    padding: 0;
+}
+
+
 @media (min-width:769px) {
     .open-menu {
         display: none;
@@ -217,6 +239,10 @@ li {
 }
 
 @media (max-width:768px) {
+    .heroContent {
+        margin-bottom: 8rem;
+    }
+
     .navbar {
         position: relative;
     }
@@ -261,4 +287,146 @@ li {
     .top-lay>.container-lg>ul>li {
         padding-bottom: 10px;
     }
+}
+
+.img1 {
+    border-radius: 50%;
+}
+
+/* about styling  */
+
+
+
+.about>div {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 5rem;
+
+}
+
+.para {
+    padding-right: 0rem;
+    margin-bottom: 0px;
+    line-height: 2rem;
+    font-weight: lighter;
+    font-size: 17px;
+    color: rgb(156, 156, 156);
+}
+
+.aboutMe {
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(255, 165, 0);
+    margin-bottom: 15px;
+}
+
+.about1 {
+    font-weight: 700;
+    font-size: 40px;
+    color: rgb(42, 42, 42);
+    margin-bottom: 20px;
+}
+
+.bottom-border {
+    width: 4rem;
+    border-bottom: 3px solid rgb(255, 165, 0);
+    margin-bottom: 1.5rem;
+}
+
+.img2 {
+    border-radius: 60px;
+    height: 625px;
+    width: 480px;
+    padding: 0;
+}
+
+/* PROGRESS BAR CSS */
+.prog-text{
+
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+    padding: 0;
+    /* border-radius: 4px; */
+    /* height: 10px; */
+    width: 100%;  
+    margin-bottom: -24px;
+}
+.progressContainer {
+    padding: 0;
+    border-radius: 4px;
+    height: 6px;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.164);
+}
+.progressContent{
+    border-radius: 4px;
+    height: 6px;
+    width: 75%;
+    background-color: red;
+}
+
+.progressContent1{
+    border-radius: 4px;
+    height: 6px;
+    width: 90%;
+    background-color: rgb(0, 255, 8);
+}
+.progressContent2{
+    border-radius: 4px;
+    height: 6px;
+    width: 65%;
+    background-color: rgb(119, 0, 255);;
+}
+
+
+/* PROGRESS BAR CSS ENDS */
+
+@media (max-width:950px) {
+    .about>div {
+        flex-wrap: wrap;
+        row-gap: 2rem;
+        justify-content: center;
+
+    }
+}
+
+@media (max-width:500px) {
+    .img2 {
+        height: 525px;
+        width: 300px;
+    }
+}
+
+/* MY PORTFOLIO REGION */
+.portfolio::after {
+    content: '';
+    background-image: url(./img/portfolio-left-dec.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 677px;
+    height: 759px;
+    z-index: -1;
+}
+.portfolio{
+    height: 100%;
+    padding-top: 130px;
+    overflow: hidden;
+    position: relative;
+    background-position: center;
+    padding-bottom: 130px;
+}
+.portfolio::before{
+    content: '';
+    background-image: url(./img/portfolio-right-dec.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    width: 414px;
+    height: 861px;
+    z-index: -1;
 }
