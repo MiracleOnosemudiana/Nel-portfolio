@@ -181,7 +181,7 @@ li {
 
 
 
-@media (max-width:950px) {
+@media (max-width:991px) {
     .heroContent>.container-md {
         /* display: block;
         padding: 0 2rem;*/
@@ -206,7 +206,7 @@ li {
 
 }
 
-@media (min-width:950px) {
+@media (min-width:991px) {
     .img1 {
         width: 500px;
         height: 500px;
@@ -348,42 +348,32 @@ li {
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
     padding: 0;
-    /* border-radius: 4px; */
-    /* height: 10px; */
     width: 100%;  
-    margin-bottom: -24px;
 }
 .progressContainer {
-    padding: 0;
-    border-radius: 4px;
-    height: 6px;
-    width: 100%;
     background-color: rgba(128, 128, 128, 0.164);
 }
+.progress{
+    height: 1.5rem;
+    font-size: 0.8rem;
+}
 .progressContent{
-    border-radius: 4px;
-    height: 6px;
-    width: 75%;
     background-color: red;
 }
-
 .progressContent1{
-    border-radius: 4px;
-    height: 6px;
-    width: 90%;
     background-color: rgb(0, 255, 8);
 }
 .progressContent2{
-    border-radius: 4px;
-    height: 6px;
-    width: 65%;
-    background-color: rgb(119, 0, 255);;
+    background-color: rgb(119, 0, 255);
+}
+.progressContent3{
+    background-color: rgb(250, 10, 130);
 }
 
 
 /* PROGRESS BAR CSS ENDS */
 
-@media (max-width:950px) {
+@media (max-width:991px) {
     .about>div {
         flex-wrap: wrap;
         row-gap: 2rem;

@@ -13,8 +13,11 @@
 
     <!-- css  -->
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="/css/home.css"> -->
-    <!-- <link rel="stylesheet" href="/css/about.css"> -->
+    <link rel="stylesheet" href="slider.css">
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <title>Portfolio app</title>
 </head>
@@ -122,29 +125,74 @@
 
                 <div class="progressBars py-2 d-flex" style="flex-direction: column;">
                     <!-- NO. 1 -->
+
                     <div class="py-2">
                         <div class="prog-text">FLUTTER</div>
-                        <div style="width: 75%;text-align: right; font-weight: bolder; color: red;">75%</div>
+                        <div class="progress">
+                            <div class="progress-bar progressContent" role="progressbar" aria-valuenow="10"
+                                aria-valuemin="0" aria-valuemax="100" style="width:10%;font-weight: bold;">
+                                10%
+                            </div>
+                        </div>
+
+                        <!--  <div class="prog-text">FLUTTER</div>
+                        <div style="width: 10%;text-align: right; font-weight: bolder; color: red;">10%</div>
                         <div class="progressContainer container-fluid">
                             <div class="progressContent"></div>
-                        </div>
+                        </div>-->
                     </div>
                     <!-- NO. 2 -->
+
                     <div class="py-2">
                         <div class="prog-text">KOTLIN</div>
+                        <div class="progress">
+                            <div class="progress-bar progressContent1" role="progressbar" aria-valuenow="90"
+                                aria-valuemin="0" aria-valuemax="100" style="width:90%;font-weight: bold;">
+                                90%                          </div>
+                        </div>
+
+
+                        <!--   <div class="prog-text">KOTLIN</div>
                         <div style="width: 90%;text-align: right; font-weight: bolder; color: rgb(0, 255, 8);">90%</div>
                         <div class="progressContainer container-fluid">
                             <div class="progressContent1"></div>
-                        </div>
+                        </div> -->
                     </div>
                     <!-- NO. 3 -->
+
                     <div class="py-2">
-                        <div class="prog-text">REACT NATIVE</div>
+                        <div class="prog-text">XML</div>
+                        <div class="progress">
+                            <div class="progress-bar progressContent2" role="progressbar" aria-valuenow="65"
+                                aria-valuemin="0" aria-valuemax="100" style="width:65%;font-weight: bold;">
+                                65%
+                            </div>
+                        </div>
+
+                        <!--   <div class="prog-text">XML</div>
                         <div style="width:65%;text-align: right; font-weight: bolder; color: rgb(119, 0, 255);">65%
                         </div>
                         <div class="progressContainer container-fluid">
                             <div class="progressContent2"></div>
+                        </div>-->
+                    </div>
+                    <!-- NO. 4 -->
+
+                    <div class="py-2">
+                        <div class="prog-text">JETPACK COMPOSE</div>
+                        <div class="progress">
+                            <div class="progress-bar progressContent3" role="progressbar" aria-valuenow="95"
+                                aria-valuemin="0" aria-valuemax="100" style="width:95%;font-weight: bold;">
+                                95%
+                            </div>
                         </div>
+
+                        <!--   <div class="prog-text">JETPACK COMPOSE</div>
+                        <div style="width: 95%;text-align: right; font-weight: bolder; color: rgb(250, 10, 130)">95%
+                        </div>
+                        <div class="progressContainer container-fluid">
+                            <div class="progressContent3"></div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -155,56 +203,47 @@
 
     <!-- PORTFOLIO REGION STARTS  -->
     <div class="portfolio">
-        <div class="container">
-            <h6 class="aboutMe">MY PORTOFOLIO</h6>
-            <h2 class="about1">See My Recent Projects</h2>
-            <div class="bottom-border"> </div>
+        <div>
+            <div class="container">
+                <h6 class="aboutMe">MY PORTOFOLIO</h6>
+                <h2 class="about1">See My Recent Projects</h2>
+                <div class="bottom-border"> </div>
 
-            <div>
-               
-                <p class="para">Gideon Sunday is a visual communicator with strong passion for Technology Advancement,
-                    media communication and visual design.
-                </p>
-                <p class="para">He is a lover of God and worships at Grace Family (Commonwealth of Champions), Uyo. Akwa
-                    Ibom State, Nigeria.
-                </p>
-                <p class="para">
-                    Gideon Sunday is Enthusiastic about Leadership, Growth, Mentorship and Effective communication for
-                    All-Round Transformation.
-                </p>
-                <p class="para">
-                    He is the last born in the family of five children. A native of Ikot E-Ekpene village in Ibiono Ibom
-                    Local Government Area, Akwa Ibom State, Nigeria.
-                </p>
+                <!-- <div>
+
+                    <p class="para wem">Gideon Sunday is a visual communicator with strong passion for Technology
+                        Advancement,
+                        media communication and visual design.
+                    </p>
+                    <p class="para wem">He is a lover of God and worships at Grace Family (Commonwealth of Champions), Uyo.
+                        Akwa
+                        Ibom State, Nigeria.
+                    </p>
+                    <p class="para wem">
+                        Gideon Sunday is Enthusiastic about Leadership, Growth, Mentorship and Effective communication
+                        for
+                        All-Round Transformation.
+                    </p>
+                    <p class="para wem">
+                        He is the last born in the family of five children. A native of Ikot E-Ekpene village in Ibiono
+                        Ibom
+                        Local Government Area, Akwa Ibom State, Nigeria.
+                    </p>
+                </div> -->
             </div>
 
-            <!-- <div>
-                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="10000">
-                            <img src="./img/IMG-20220524-WA0023.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="2000">
-                            <img src="./img/IMG-20220524-WA0023.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/IMG-20220522-WA0035.jpg" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+            <!-- SLIDER STARTS  -->
+            <div class="gallery">
+                <div class="gallery-container">
+                    <img class="gallery-item gallery-item-1" src="./img/img1.jpg" alt="" data-index="1">
+                    <img class="gallery-item gallery-item-2" src="./img/img2.jpg" alt="" data-index="2">
+                    <img class="gallery-item gallery-item-3" src="./img/img3.jpg" alt="" data-index="3">
+                    <img class="gallery-item gallery-item-4" src="./img/img4.jpg" alt="" data-index="4">
+                    <img class="gallery-item gallery-item-5" src="./img/img5.jpg" alt="" data-index="5">
                 </div>
-            </div> -->
-
-
+                <div class="gallery-controls"></div>
+            </div>
+            <!-- SLIDER ENDS  -->
 
 
         </div>
@@ -216,6 +255,7 @@
 
 
     <script src="./main.js"></script>
+    <!-- <script src="./slider.js"></script> -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
