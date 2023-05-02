@@ -1,6 +1,12 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    /* transition: all 3s ease; */
+}
+
+::selection {
+    color: rgb(255, 255, 255) !important;
+    background: rgba(255, 115, 0, 0.737);
 }
 
 .top-lay {
@@ -55,6 +61,11 @@
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.03) 0px 5px 8px;
     z-index: 10;
+}
+
+.topNavigation {
+    position: fixed;
+    top: 0;
 }
 
 a {
@@ -247,6 +258,11 @@ li {
         position: relative;
     }
 
+    .topNavigation {
+        position: fixed ;
+        top: 0;
+    }
+
     .navbar-links {
         display: none;
         position: absolute;
@@ -342,31 +358,37 @@ li {
 }
 
 /* PROGRESS BAR CSS */
-.prog-text{
+.prog-text {
 
     font-weight: bolder;
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
     padding: 0;
-    width: 100%;  
+    width: 100%;
 }
+
 .progressContainer {
     background-color: rgba(128, 128, 128, 0.164);
 }
-.progress{
+
+.progress {
     height: 1.5rem;
     font-size: 0.8rem;
 }
-.progressContent{
+
+.progressContent {
     background-color: red;
 }
-.progressContent1{
+
+.progressContent1 {
     background-color: rgb(0, 255, 8);
 }
-.progressContent2{
+
+.progressContent2 {
     background-color: rgb(119, 0, 255);
 }
-.progressContent3{
+
+.progressContent3 {
     background-color: rgb(250, 10, 130);
 }
 
@@ -401,15 +423,17 @@ li {
     height: 759px;
     z-index: -1;
 }
-.portfolio{
+
+.portfolio {
     height: 100%;
     padding-top: 130px;
     overflow: hidden;
     position: relative;
     background-position: center;
-    padding-bottom: 130px;
+    padding-bottom: 70px;
 }
-.portfolio::before{
+
+.portfolio::before {
     content: '';
     background-image: url(./img/portfolio-right-dec.jpg);
     background-repeat: no-repeat;
@@ -419,4 +443,159 @@ li {
     width: 414px;
     height: 861px;
     z-index: -1;
+}
+
+/* CHECK OUR BLOG REGION */
+.blog {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-top: 70px;
+    padding-bottom: 130px;
+}
+
+.blog::before {
+    content: "";
+    background-image: url(./img/blog-left-dec.jpg);
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 961px;
+    height: 1020px;
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+
+.blog-title {
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.blog-title>div {
+    margin: 0 auto;
+}
+
+.blog-img1 {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 100%;
+}
+
+.blog-img2 {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.blog-subImg {
+    align-items: center;
+}
+
+.blog-subImg>img {
+    width: 4rem;
+}
+
+.happy {
+    font-weight: bolder;
+}
+
+@media (max-width:768px) {
+    .blog-right>div>img {
+        width: 10rem;
+    }
+
+    .blog-right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.5rem;
+
+    }
+}
+
+@media (max-width:400px) {
+    .blog-right {
+        flex-direction: column;
+    }
+
+}
+
+/* CONTACT US REGION */
+.contactBox {
+    border-radius: 20px;
+    width: 100%;
+    min-height: 200px;
+    position: relative;
+    overflow: hidden;
+    padding: 7rem 3rem;
+}
+
+.contactBox::after {
+    content: "";
+    background-image: url(./img/contact-top-right.png);
+    position: absolute;
+    width: 726px;
+    height: 78px;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+.contactBox::before {
+    content: "";
+    background-image: url(./img/contact-bottom-right.png);
+    position: absolute;
+    width: 530px;
+    height: 104px;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+
+
+.contactIcons {
+    border-radius: 25px;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contactContenerRadius {
+    border-radius: 25px;
+
+}
+
+.contactIconContener:hover {
+    color: rgb(255, 165, 0);
+}
+
+.contactIconContener {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    transition: all .3s ease;
+}
+
+.contactIconContener>img {
+    width: 5.5rem;
+}
+
+/* FOOTER REGION STARTS */
+.footer {
+    background-image: url(./img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    margin-top: 130px;
+}
+
+.footer>p {
+    padding: 1.6rem;
 }

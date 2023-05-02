@@ -19,6 +19,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+    <!-- for email  -->
+    <!-- <script
+        src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script> -->
+
     <title>Portfolio app</title>
 </head>
 
@@ -43,6 +47,7 @@
         </div>
         <div id="home">
             <!-- Navbar starts  -->
+            <!-- topNavigation -->
             <div class="navbar ">
                 <div class="container-lg">
                     <a href="#top" class="logo h2">NELSON</a>
@@ -148,7 +153,7 @@
                         <div class="progress">
                             <div class="progress-bar progressContent1" role="progressbar" aria-valuenow="90"
                                 aria-valuemin="0" aria-valuemax="100" style="width:90%;font-weight: bold;">
-                                90%                          </div>
+                                90% </div>
                         </div>
 
 
@@ -208,28 +213,6 @@
                 <h6 class="aboutMe">MY PORTOFOLIO</h6>
                 <h2 class="about1">See My Recent Projects</h2>
                 <div class="bottom-border"> </div>
-
-                <!-- <div>
-
-                    <p class="para wem">Gideon Sunday is a visual communicator with strong passion for Technology
-                        Advancement,
-                        media communication and visual design.
-                    </p>
-                    <p class="para wem">He is a lover of God and worships at Grace Family (Commonwealth of Champions), Uyo.
-                        Akwa
-                        Ibom State, Nigeria.
-                    </p>
-                    <p class="para wem">
-                        Gideon Sunday is Enthusiastic about Leadership, Growth, Mentorship and Effective communication
-                        for
-                        All-Round Transformation.
-                    </p>
-                    <p class="para wem">
-                        He is the last born in the family of five children. A native of Ikot E-Ekpene village in Ibiono
-                        Ibom
-                        Local Government Area, Akwa Ibom State, Nigeria.
-                    </p>
-                </div> -->
             </div>
 
             <!-- SLIDER STARTS  -->
@@ -245,13 +228,133 @@
             </div>
             <!-- SLIDER ENDS  -->
 
+        </div>
+    </div>
+    <!-- PORTFOLIO REGION ENDS  -->
+
+    <!-- BLOG REGION STARTS  -->
+
+    <div class="blog">
+        <div class="container">
+            <div class="blog-title">
+                <h6 class="aboutMe">RECENTLY</h6>
+                <h2 class="about1">Check Our Blog Posts</h2>
+                <div class="bottom-border"></div>
+            </div>
+
+            <div class="row gap-5 gap-lg-3">
+                <div class="col-lg">
+                    <div class="shadow" style="border-radius: 15px;">
+                        <img src="./img/IMG-20220524-WA0023.jpg" alt="" class="blog-img1">
+                        <div class="p-4">
+                            <h3 class="my-3 happy">STAY HAPPY!</h3>
+                            <p class="lead text-secondary">FOR YOUR BEAUTIFUL PHOTOSHOOT SESSION.</p>
+                            <div class="d-flex gap-3 blog-subImg align-items-center py-4">
+                                <img src="./img/IMG-20220524-WA0023.jpg" alt="" class="rounded-pill">
+                                <p class="lead text-secondary m-0">By: Gideon Sunday</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg">
+                    <div>
+                        <div class="blog-right">
+                            <div>
+                                <img src="./img/IMG-20220522-WA0035.jpg" alt="" class="blog-img2">
+                            </div>
+                            <div>
+                                <h3 class="mt-2 mb-3 happy">PROFESSIONAL GRAPHIC DESIGN?</h3>
+                                <p class="lead">LET ME BE YOUR PLUG.</p>
+                            </div>
+                        </div>
+                        <div class="blog-right">
+                            <div>
+                                <img src="./img/IMG-20220522-WA0043.jpg" alt="" class="container-fluid">
+                            </div>
+                            <div>
+                                <h3 class="mt-2 mb-3 happy">IN NEED OF A CONTENT CREATOR?</h3>
+                                <p class="lead">FOLLOW ME UP FOR INSPIRED CONTENT.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
+    </div>
+    <!-- BLOG REGION ENDS  -->
+
+    <!-- CONTACT US REGION STARTS  -->
+    <div class="contactUs mb-5">
+        <div class="container">
+            <div class="blog-title">
+                <h6 class="aboutMe">CONTACT US</h6>
+                <h2 class="about1">Get In Touch With Me Now</h2>
+                <div class="bottom-border"></div>
+            </div>
+            <div class="shadow contactBox">
+                <div class=" row gap-4">
+                    <div class="shadow p-4 col-md contactIcons">
+                        <a href="tel:+2349131170904" class="contactIconContener">
+                            <img src="./img/phone-icon.png" alt="" class="contactIcons">
+                            <span>09131170904</span>
+                        </a>
+                    </div>
 
 
+                    <div class="shadow p-4 contactIcons col-md">
+                        <a href="mailto:onosemudianamiracle@gmail.com" class="contactIconContener">
+                            <img src="./img/email-icon.png" alt="" class="contactIcons">
+                            <span>Gmail</span>
+                        </a>
+                    </div>
+
+                    <div class="shadow p-4 contactIcons col-md">
+                        <a href="" class="contactIconContener">
+                            <img src="./img/location-icon.png" alt="" class="contactIcons">
+                            AKS, Nigeria
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form Code -->
+            <!-- <form action="mailto:onosemudianamiracle1@gmail.com" method="POST" enctype="text/plain"
+                    name="EmailForm">
+
+
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><br>
+
+
+                    <label for="ContactCommentt">Message:</label><br>
+                    <textarea id="ContactCommentt" rows="10" cols="40"></textarea>
+
+                    <input type="submit" value="Send">
+                </form>
+
+                <form action="mailto:emailid@example.com" method="post" enctype="text/plain">
+                    Student Name:<br><input type="text" name="sname"> <br>
+                    Student Subject:<br><input type="text" name="ssubject"><br>
+                    <input type="submit" value="Send">
+                 </form> -->
+
+
+
+
+        </div>
+    </div>
+    <!-- CONTACT US REGION ENDS  -->
+
+    <!-- FOOTER REGION STARTS -->
+
+    <div class="footer">
+        <p class="lead text-white text-center m-0 ">Copyright © 2022 Nelson., All Rights Reserved.</p>
     </div>
 
-    <!-- PORTFOLIO REGION ENDS  -->
+    <!-- FOOTER REGION ENDS  -->
 
 
     <script src="./main.js"></script>
